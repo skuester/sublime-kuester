@@ -1,0 +1,22 @@
+<snippet>
+    <content><![CDATA[
+angular.module('${1:name}').factory('${2:ClassName}', Factory);
+
+
+// @ngInject
+function Factory(${3:dependencies}) {
+
+
+    class ${2} {
+    	constructor() {
+    		$0
+    	}
+    }
+
+
+    return ${2};
+}
+]]></content>
+    <tabTrigger>ngclass</tabTrigger>
+    <scope>source.js</scope>
+</snippet>

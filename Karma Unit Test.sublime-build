@@ -1,0 +1,4 @@
+{
+	"shell_cmd": "/usr/local/bin/node node_modules/.bin/karma start karma.conf.coffee",
+	"working_dir": "/Users/skuester/ms/code/ministry_sync/client"
+}

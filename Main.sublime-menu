@@ -1,0 +1,28 @@
+[
+{
+	"id": "preferences",
+	"children":
+	[
+	{
+		"id": "package-settings",
+		"children":
+		[
+		{
+			"caption": "SKuester",
+			"children":
+			[
+			{
+				"caption": "Key Bindings",
+				"command": "open_file",
+				"platform": "OSX",
+				"args": {
+					"file": "${packages}/SKuester/Default (OSX).sublime-keymap"
+				}
+			}
+			]
+		}
+		]
+	}
+	]
+}
+]

@@ -1,0 +1,21 @@
+<snippet>
+    <content><![CDATA[
+angular.module('${1:name}').factory('${2:factory}', ${2});
+
+
+// @ngInject
+function ${2}(${3:dependencies}) {
+
+    return {
+        ${4:func}
+    };
+
+
+    function ${4}() {
+        $0
+    }
+}
+]]></content>
+    <tabTrigger>ngfactory</tabTrigger>
+    <scope>source.js</scope>
+</snippet>

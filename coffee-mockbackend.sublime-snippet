@@ -1,0 +1,15 @@
+<snippet>
+	<content><![CDATA[
+browser.addMockModule 'testconf', ->
+    angular.module('testconf', ['backend']).run (\$httpBackend) ->
+        \$httpBackend.when('${1:GET}', '/api/${2:some/url}').respond
+            ${3:${4:resource}: [
+                $0
+            ]}
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>mockbackend</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.coffee</scope>
+	<description>Protractor - Mock HTTP Backend</description>
+</snippet>

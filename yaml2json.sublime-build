@@ -1,0 +1,3 @@
+{
+	"shell_cmd": "yaml2json $file > $file_path/$file_base_name.json"
+}

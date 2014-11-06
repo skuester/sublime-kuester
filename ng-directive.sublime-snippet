@@ -1,0 +1,31 @@
+<snippet>
+    <content><![CDATA[
+angular.module('${1:core}').directive '${3:name}', ($4) ->
+    priority: 0
+    terminal: false # this priority will be the last set of directives to execute
+    restrict: 'A' # others: ECM
+    template: '<div></div>' # or (tElement, tAttrs) -> "template string"
+    templateUrl: '/assets/$1/_$3.html' # or (tElement, tAttrs) -> "template url"
+    replace: false
+    transclude: false # or 'element' to transclude the whole element, + any directives of lower priority
+    scope: false # or {}
+    controlleras: '$3' # available in directive template
+    controller: (\$scope, \$element, \$attrs, \$transclude) ->
+    require: 'siblingDirective' # ^parent or ?optional or ?^optionalParent
+    #only use to transform template DOM
+    compile: (tElement, tAttrs, transclude) ->
+        # or return postLink fn
+        pre: (scope, ielem, iattrs, controller) ->
+            # not safe for DOM transformation
+        post: (scope, ielem, iattrs, controller) ->
+            # safe for DOM transformation ("link")
+    # called if compile not defined
+    link: (scope, ielement, iattrs, controller) ->
+        # register DOM listeners or update DOM
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>directive</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.coffee</scope>
+    <description>Angular directive</description>
+</snippet>

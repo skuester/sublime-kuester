@@ -1,0 +1,8 @@
+<snippet>
+	<content><![CDATA[
+expect( $1 ).${2:toBe} $0
+]]></content>
+	<tabTrigger>expect</tabTrigger>
+	<scope>source.coffee</scope>
+	<description>spec expect</description>
+</snippet>

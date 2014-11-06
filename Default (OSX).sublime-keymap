@@ -1,0 +1,8 @@
+[
+	{ "keys": ["super+j"], "command": "join_lines" },
+	// fix indentation
+	{ "keys": ["super+shift+r"],  "command": "reindent" },
+	// quick file, dir
+	{ "keys": [" ", "n"], "command": "quick_create_file", "context": [{"key": "setting.command_mode"}] },
+	{ "keys": [" ", "d"], "command": "quick_create_directory", "context": [{"key": "setting.command_mode"}] }
+]

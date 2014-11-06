@@ -1,0 +1,13 @@
+<snippet>
+    <content><![CDATA[
+angular.module('${1:main}${2:.services}').service '${3:name}',
+	class ${4:$3}
+    	constructor: () ->
+    	$0
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>service</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.coffee</scope>
+    <description>Angular service</description>
+</snippet>
