@@ -6,9 +6,10 @@ angular.module('${1:name}').directive('${2:directive}', ${2});
 // @ngInject
 function ${2}(${3:dependencies}) {
     return {
-        restrict: 'A',
+        restrict: 'E',
         scope: {},
         controller: ${2}Controller,
+        templateUrl: '${1/\./\//g}/${2/([A-Z])/-\l$1/g}.html'
         link: link
     };
 
