@@ -9,18 +9,19 @@ function ${2}(${3:dependencies}) {
         restrict: 'E',
         scope: {},
         controller: ${2}Controller,
-        templateUrl: '${1/\./\//g}/${2/([A-Z])/-\l$1/g}.html'
+        templateUrl: '${1/\./\//g}/${2/([A-Z])/-\l$1/g}.html',
         link: link
     };
 
     function link(scope, elem, attrs) {
-        $0
+
     }
 }
 
 
 // @ngInject
-function ${2}Controller() {
+function ${2}Controller(${4:\$scope, \$attrs, \$element}) {
+    $0
 }
 ]]></content>
     <tabTrigger>ngdirective</tabTrigger>
