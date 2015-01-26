@@ -1,5 +1,5 @@
 <snippet>
-    <content><![CDATA[
+	<content><![CDATA[
 angular.module('${1:name}').factory('${2:ClassName}', Factory);
 
 
@@ -7,16 +7,16 @@ angular.module('${1:name}').factory('${2:ClassName}', Factory);
 function Factory(${3:dependencies}) {
 
 
-    class ${2} {
-    	constructor() {
-    		$0
-    	}
-    }
+	class ${2} {
+		constructor() {
+			$0
+		}
+	}
 
 
-    return ${2};
+	return ${2};
 }
 ]]></content>
-    <tabTrigger>ngclass</tabTrigger>
-    <scope>source.js</scope>
+	<tabTrigger>ngclass</tabTrigger>
+	<scope>source.js</scope>
 </snippet>

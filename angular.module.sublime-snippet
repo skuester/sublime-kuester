@@ -1,9 +1,9 @@
 <snippet>
-    <content><![CDATA[
+	<content><![CDATA[
 angular.module('${1:name}', [
-    '${2:dependencies}'
+	'${2:dependencies}'
 ]);
 ]]></content>
-    <tabTrigger>ngmodule</tabTrigger>
-    <scope>source.js</scope>
+	<tabTrigger>ngmodule</tabTrigger>
+	<scope>source.js</scope>
 </snippet>
