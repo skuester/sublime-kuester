@@ -1,0 +1,23 @@
+<snippet>
+	<content><![CDATA[
+describe ("directive: $1", function () {
+
+	beforeEach(module('${2:core.ui}'));
+
+
+	var element;
+	var helper = use_helper();
+
+
+	beforeEach(inject(function () {
+		element = helper.element('<$1></$1>');
+	}));
+
+
+	$0
+
+});
+]]></content>
+	<tabTrigger>ngspecdirective</tabTrigger>
+	<scope>source.js</scope>
+</snippet>
