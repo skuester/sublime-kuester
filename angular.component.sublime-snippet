@@ -1,0 +1,21 @@
+<snippet>
+	<content><![CDATA[
+angular.module('${1:module.name}').component({
+	selector: '${2:my-element}',${3:
+	bind: {
+		${4:attr: '=',}
+	\},}
+}, ${2/-?(\w)(\w+)?/\u$1$2/g});
+
+
+// @ngInject
+function ${2/-?(\w)(\w+)?/\u$1$2/g}(${5}) {
+	var self = this;
+
+	$0
+
+}
+]]></content>
+	<tabTrigger>ngcomponent</tabTrigger>
+	<scope>source.js</scope>
+</snippet>
